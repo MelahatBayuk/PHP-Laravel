@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+        }
+        #parent{
+            width: 300px;
+            height: 300px;
+            background: red;
+            position: relative;
+        }
+        #child{
+            width: 150px;
+            height: 150px;
+            background: yellow;
+            position: absolute;
+            left: 75px;
+            top: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        PARENT
+        <div id="child">
+            CHILD
+
+        </div>
+    </div>
+
+    <script>
+      var parent=document.getElementById("parent");
+      var child=document.getElementById("child");
+     
+      parent.addEventListener("click",parentyaz,false); //true yazarak kodu çalıştırdığımızda console tıklayıp baktığımızda önce parent sonra chiild gelecek ->bubbling
+      child.addEventListener("click",cocukyaz,false);//bubbling
+
+      function parentyaz(event){
+          
+          console.log("parent");
+      }
+      function cocukyaz(event){
+          event.stopPropagation();
+          child.removeEventListener("click",cocukyaz);
+        console.log("cocuk");
+
+      }
+    </script>
+</body>
+</html>

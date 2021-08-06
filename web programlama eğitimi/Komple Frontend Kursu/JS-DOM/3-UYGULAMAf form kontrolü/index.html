@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validate()"> 
+  <input name="password" type="password " value="Şifrenizi Giriniz...">  
+  <br>
+  <input name="repassword" type="password" value="Şifrenizi Tekrar Giriniz...">
+  <br>
+  <input type="submit" value="Kayıt Ol">
+</form>
+ <script>
+ function validate(){
+    var pass=document.getElementsByName("password")[0];
+  var repass=document.getElementsByName("repassword")[0];
+   if(pass.value!="" && repass.value!=""){
+  if(pass.value ==repass.value){
+      alert("Kaydınız Tamamlandı")
+      return true;
+}  }
+  alert("girilen şifreler eşleşmedi");
+  return false;
+ }
+ 
+ </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <ul>
+            <li>İtem 1</li>
+            <li>İtem 2</li>
+            <li>item 3</li>
+        </ul>
+    </div>
+    <button onclick="sil()">sil</button>
+    <script>
+        var index=2;
+        function sil(){
+
+            if(index>=0){
+          $("li").eq(index).remove(); //remove yerine .empty() yazarsak veri kalır ama içeriğini siler
+          index--;
+        } 
+        if(index<0){
+        $("button").eq(0).css("display","none"); //bütün itemleri sildikten sonra display-none özelliği ile button da ortadan kalkıyo
+    }
+    }
+  
+       // $("p").parents().css("background","red");
+       //$("p").parents().eq(1).css("background","red"); 
+     
+    </script>
+</body>
+</html> 

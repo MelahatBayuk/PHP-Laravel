@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+      function saatigoster(){
+        var tarih=new Date();
+         var saat=tarih.getHours();
+         var dakika=tarih.getMinutes();
+         var saniye=tarih.getSeconds();
+         document.body.innerHTML=saat + ":" + dakika + ":" + saniye + "<br>";
+
+      };
+      setInterval(saatigoster,1000);
+     //   setInterval(saatigoster,1000); //setinterval ile saatin saniye ve dakikaları kendiinden ilerleyecek ve bir saniye de bir göster diyoruz (100)
+        
+
+    </script>
+</body>
+</html>

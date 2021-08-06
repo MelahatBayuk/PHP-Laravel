@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+       display: grid; 
+          grid-template:200px 300px 200px /100px repeat(2,auto);
+         /* grid-row-gap: 5px; /* gap ile satır ve sütun arasında boşluk bıraktık 
+          grid-column-gap: 5px ; */
+          grid-gap:5px 5px  ; /*boşluk bırakmanın kısa yoluı */
+          
+          
+          }
+        .container>div{
+            text-align: center;
+            font-size: 24px;
+        }
+        .box-1{ background-color: aqua;/* grid-column-start:1; grid-column-end:span 2;*/}
+        .box-2{ background-color:red; }
+        .box-3{ background-color: blue; }
+        .box-4{ background-color: blueviolet;}
+        .box-5{ background-color:yellow; order:-7;}
+        .box-6{ background-color: green;  } /*grid-area: 2 / 1 / span 2 / span 3  ; bileştirmede kullanılıyo */
+        .box-7{ background-color: orange; order:-8;}
+        .box-8{ background-color: palevioletred;}
+        .box-9{ background-color: purple;}
+    </style>
+</head>
+<body> <div class="container">
+    <div class="box-1">1</div>
+    <div class="box-2">2</div>
+    <div class="box-3">3</div>
+    <div class="box-4">4</div>
+    <div class="box-5">5</div>
+    <div class="box-6">6</div>
+    <div class="box-7">7</div>
+    <div class="box-8">8</div>
+    <div class="box-9">9</div>
+</div>
+</body>
+</html>

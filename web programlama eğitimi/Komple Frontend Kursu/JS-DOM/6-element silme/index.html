@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Anasayfa</li>
+            <li>HAkkımızda</li>
+            <li>İletişim</li>
+            <li>Vizyonumuz</li>
+        </ul>
+    </nav>
+    <script>
+        var navmenu=document.getElementsByTagName("nav")[0];
+        var sil=navmenu.childNodes[1].childNodes[5]; //iletişim kısmı silme işlemi
+
+        navmenu.childNodes[1].removeChild(sil);
+    </script>
+</body>
+</html>

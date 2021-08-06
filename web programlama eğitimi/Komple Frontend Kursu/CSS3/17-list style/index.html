@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list1{
+            list-style: none;
+        }
+        .list1 li::before{
+            content: "";
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            background-image: url("letter-m-logo-alphabet-logotype-600w-242183434.jpg");
+            background-size: 20px;
+            background-attachment: fixed;
+            background-size: 50px;
+   }
+   .list2{
+       list-style-type: square;    
+        list-style-position: inside;
+   }
+  .list3{
+      list-style-type: circle ;
+      list-style-position: inside;
+ 
+  }
+    </style>
+</head>
+<body>
+    <ul class="list1">
+        Liste 1
+        <li>Eleman 1</li>
+        <li>Eleman 2</li>
+        <li>Eleman 3</li>
+    </ul>
+    <ul class="list2">
+        Liste 2
+        <li>Eleman 1</li>
+        <li>Eleman 2</li>
+        <li>Eleman 3</li>
+    </ul>
+    <ul class="list3">
+        Liste 3
+        <li>Eleman 1</li>
+        <li>Eleman 2</li>
+        <li>Eleman 3</li>
+    </ul>
+</body>
+</html>

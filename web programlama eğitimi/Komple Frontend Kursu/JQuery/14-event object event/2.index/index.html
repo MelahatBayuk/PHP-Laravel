@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body{
+            margin: 0;
+            margin-top: 70px;
+        }
+        div{
+            height: 300px;
+            width: 300px;
+            background: red;
+            text-align: center;
+        }
+        p{
+            height: 200px;
+            width: 200px;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>Parent
+        <p>Çocuk</p>
+    </div>
+   <script>
+     /*  $("p").click(function () {
+           alert("Çocuk");
+           event.stopPropagation();//propagation yayılmayı önler.çocuğu basınca sadece çocukla ilgili uyarı gelir.ama propagation yapmasaydık çocuğa hem çocuk hem paren için uyarı gelirdi
+       });
+       $("div").click(function () {
+           alert("Parent");
+
+       }); */ 
+       $("p").click(function () {
+         
+          $("p").parent().html("çocuk tıklandı"); //çocuğun üstüne tıkladığımızda çocuğu parente ekler
+       });
+  
+ setTimeout(function(){
+    $("p").trigger("click"); // trigger kullanıcıdan bir olay gelmeden tetikliyor
+ }, 3000); //saniye sonra çocuk ekrandan gidiyor
+   </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     ul{ 
+         list-style: square;
+         
+     }
+     ol{
+         list-style: upper-roman;
+     }
+     li:before {
+    content: "•";
+    position: absolute;
+    left: -1em;
+    color: red;
+}
+    </style>
+</head>
+<body>
+      <h1>Listeler</h1>
+      <h2>Sırasız Listeler</h2>
+     <ul>
+         Programlama Dilleri
+         <li>C</li>
+         <li>C++</li>
+         <li>C#</li>
+        
+     </ul>
+     <h2>Sıralı Listeler</h2>
+     <ol type="I">
+         Ön Yüzde Kullanılanlar
+        <li>HTML5</li>
+        <ol start="5" type="i">
+            <li>eski html kodları</li>
+            <li>yeni html kodları</li>
+        </ol>
+        <li>Css3</li>
+        <li>Bootstrap</li>
+   
+       
+    </ol>
+     
+</body>
+</html>

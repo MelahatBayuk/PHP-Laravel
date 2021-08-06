@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+       display: grid; /* ızgara sistemi var elimizde grid
+          grid-template-rows:200px 200px 200px; /*satırlar için 
+          grid-template-columns: 200px 200px 200px; /*sütun için */
+          grid-template:200px 300px 200px /200px 200px 200px ;
+          /* repeat özelliği ile üç defa ayrı ayrı 200px yazmamıza gerek kalmadan repeat(3,200) yazabilirz*/
+          /* grid-template:200px 300px 200px /repeat(3,minmax(100px,auto)) */
+          }
+        .container>div{
+            text-align: center;
+            font-size: 24px;
+        }
+        .box-1{ background-color: aqua;}
+        .box-2{ background-color:red;}
+        .box-3{ background-color: blue;}
+        .box-4{ background-color: blueviolet;}
+        .box-5{ background-color:yellow;}
+        .box-6{ background-color: green;}
+        .box-7{ background-color: orange;}
+        .box-8{ background-color: palevioletred;}
+        .box-9{ background-color: purple;}
+    </style>
+</head>
+<body> <div class="container">
+    <div class="box-1">1</div>
+    <div class="box-2">2</div>
+    <div class="box-3">3</div>
+    <div class="box-4">4</div>
+    <div class="box-5">5</div>
+    <div class="box-6">6</div>
+    <div class="box-7">7</div>
+    <div class="box-8">8</div>
+    <div class="box-9">9</div>
+</div>
+</body>
+</html>

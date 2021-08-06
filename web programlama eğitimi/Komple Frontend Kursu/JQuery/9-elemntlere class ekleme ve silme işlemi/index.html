@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <style>
+     div{
+         height: 200px;
+        width: 200px;
+        }
+     .red{
+         background: red;
+     }
+     .green{
+         background: green;
+     }
+ </style>
+</head>
+<body>
+    <div class="red"></div>
+    <button onclick="kirmizisil()">Kırmızıyı sil</button>
+    <button onclick="yesilisil()">Yeşili Sil</button>
+    <button onclick="kirmiziekle()">Kırmızıyı ekle</button>
+    <button onclick="yesiliekle()">Yeşili ekle</button>
+
+    <button onclick="kirmizitoggle()">Kırmızı toggle</button>
+    <button onclick="yesiltoggle()">Yeşil toggle</button>
+
+
+
+<script>
+ //$("div").toggleClass("red");  class yoksa ekliyor varsa kaldırıyor
+  function kirmiziekle(){
+      $("div").addClass("red");
+  }
+  function kirmizisil(){
+      $("div").removeClass("red");
+  }
+  function yesiliekle(){
+      $("div").addClass("green");
+  }
+  function yesilisil(){
+      $("div").removeClass("green");
+  } 
+ function kirmizitoggle(){
+     $("div").toggleClass("red");
+ }
+ function  yesiltoggle(){
+     $("div").toggleClass("green");
+ }
+</script>
+</body>
+</html>

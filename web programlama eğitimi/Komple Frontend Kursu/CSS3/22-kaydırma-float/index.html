@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .float-right{
+            float: right;
+        }
+        .float-left{
+            float: left;/* laptop ile kodlama yapmak yazsını resmin sağ tarafına yani img sol tarafa konumlandırdı */
+        }
+        p{
+            border: 1px solid black;
+        }
+        img{
+            width: 25%;
+            border: 5px solid green;
+            margin-right:10px ; /*yazıları sağa çektik resim ile arasında boşluk verdik */
+            margin-bottom: 10px; /*alttan biraz boşluk bıraktık */
+        }
+        div{
+            border: 1px solid red;
+            height: 250px;
+            overflow: auto; /*paragrafın taşan kısmı için akış çubuğu oluşturduk */
+        }
+        .clear{
+            clear: both; /*sağa veya sola kaydırmaların ikisinden de etkilenmesin diye both yazdık */
+        }
+        p{
+            text-indent: 15px; /*resim ile yazı arasında boşluk bırakıyor yazı resme yapışık olmasın diye kullanıyoruz */
+            width:100%; /*yüksekliği yüzde yüz yaparak sayfanın tamamını kaplamasını sağladık paragrafın*/
+        }
+    </style>
+</head>
+<body>
+    <p>
+
+        <img src="img/images.jpg" class="float-right" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <div class="clear"> <!--clear kullanmamızdaki amaç kaydırma işleminden etkilenmemesi için birinci resmi float ile sola kaydırdığımda ikinci resmin kaymaması ve aşağı inmemesi için div için de clear oluşturduk-->
+    <img src="img/Untitled-design-20.jpg" class="float-left" alt="">
+    <p class="float-left">laptop ile kodlama yapmak çok eğlencelidir</p>
+</div>
+<div class="clear"> <!--clear kullanmamızdaki amaç kaydırma işleminden etkilenmemesi için birinci resmi float ile sola kaydırdığımda ikinci resmin kaymaması ve aşağı inmemesi için div için de clear oluşturduk-->
+    <img src="img/Untitled-design-20.jpg" class="float-left" alt="" > <!---classın içinde ki float-left sildik çünkü yazılar alt  satırdan devam etsin diye -->
+    <p class="">laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+        laptop ile kodlama yapmak çok eğlencelidir
+    </p>
+</div>
+</body>
+</html>

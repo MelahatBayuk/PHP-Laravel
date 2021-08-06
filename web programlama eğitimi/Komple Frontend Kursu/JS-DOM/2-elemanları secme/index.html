@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bolum1"><p>
+            Lorem ipsum dolor sit amet.
+        </p><p>
+            Lorem ipsum dolor sit amet.
+        </p><p>
+            Lorem ipsum dolor sit amet.
+        </p></div>
+
+    <script>
+   // var bolum1cocuk=document.getElementsByClassName("bolum1")[0];
+   // bolum1cocuk.lastChild.innerHTML="son çocuğu değiştirdik";
+ /*if(bolum1cocuk.hasChildNodes()){ bolum 1 in çocuğu var mı
+    document.body.innerHTML+="ÇOCUK VAR";
+}
+else{
+    document.body.innerHTML+="ÇOCUK YOK";
+} */
+   
+  /* var paragraflar=document.getElementsByTagName("p");
+   paragraflar[0].parentNode.innerHTML+="<p>Paragraf 3</p>"; */
+   var paragraflar=document.getElementsByTagName("p");
+   //paragraflar[1].nextSibling.innerHTML="<b> burası değiştirildi </b>";   
+   paragraflar[1].previousSibling.innerHTML="<b> burası değiştirildi </b>";   
+   </script>
+
+</body>
+
+</html>

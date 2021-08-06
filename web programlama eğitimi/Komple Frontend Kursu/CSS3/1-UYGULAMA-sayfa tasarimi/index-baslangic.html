@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+   div{
+       width: 100%;
+       height: 300px;
+       text-align: center; /*sitediki  yazıları ortala */
+       color:rgb(155, 104, 10);
+  
+   }
+   #kaanacademy{
+       font-family: 'Times New Roman', Times, serif;
+       background:url("img/letter-m-logo-alphabet-logotype-600w-242183434.jpg");
+       background-size: 100% 300px;
+      
+
+   }
+    .kaanacademyyazi{
+        display: block;
+        padding-top: 15px;
+        font-size: 20px;
+        text-shadow:0px 0px 1px black;
+        background-color:rgb(85, 80, 80);
+
+
+    }  
+    .kurslarimiz{
+        float: left;
+        width: 100%;
+        
+       
+    }
+    .kurslarimiz1{
+        padding-top: 10px;
+        width: 33.33%;
+        float: left;
+        font-weight: bold;
+
+    }
+    .kurslarimiz1:nth-child(2){ /*ikinci çocuğa eklenecek resmi ayarlamak ,için kullandık bu n-child fonksiyonunu */
+        background: url("img/yazilimcilar-neden-apple-mac-bilgisayar-kullanir-730x390.jpg") no-repeat;
+        background-size: 100% 300px;
+
+    }
+    .kurslarimiz1:nth-child(2){
+        color: rgb(230, 196, 8);
+
+    }
+    .kurslarimiz1:nth-child(3){ /*üçüncü çocuğa eklenecek resmi ayarlamak ,için kullandık bu n-child fonksiyonunu */
+  
+      background: url("img/Untitled-design-20.jpg") no-repeat;
+        background-size: 100% 300px;
+    }
+    .kurslarimiz1:nth-child(3){
+        color: white;
+
+    }
+    .kurslarimiz1:nth-child(1){ 
+        background: url("img/images.jpg") no-repeat;
+        background-size: 100% 300px;
+        
+
+    }
+    .kurslarimiz1:nth-child(1){
+        color: black;
+
+    }
+    #hakkimizda{
+        clear: both; /* resmin kaymasını engelledi */
+        background-color: rgb(104, 98, 98);
+        height: 500px;
+        color: black;
+        
+        
+    }
+    #hakkimizda img{
+     border: 5px dashed rgb(204, 168, 7);
+     margin-top: 50px;
+     width: 150px;
+     height: 150px;
+    }
+    #hakkimizda p{
+        white-space: pre-line; /*yazıları alt alta yazmak için kullandık*/
+        text-transform: capitalize; /*yazıların baş harfleri için kullandık */
+        font-size: 20px;
+    }
+    #hakkimizda p::first-line{ /*p etiketine git ilk satırı getir */
+      font-weight: bold;
+      text-decoration: underline;
+      font-size: 30px;
+      letter-spacing: 3px;
+    }
+    @media screen and (max-width: 992px) { /*görseli küçük,büyük veya telefonda açıldığında ona göre boyutlansın diye yaptık */
+        .kurslarimiz1{
+            width: 100%;
+        }
+        #hakkimizda{
+            margin-top: 900px; /* en alttaki logo sayfa ile beraber kaymasın altta sabit kalsın diye kyllanıldı */
+            height: 350px;
+        }
+        
+    }
+    
+          </style>
+</head>
+<body>
+   <div id="kaanacademy">
+      <span class="kaanacademyyazi">
+          Kaan Academy yazılım dünyasında çokça kullanılan teknolojilerini insanlara anlaşılır bir biçimde aktarmayı amaçlamaktadır.
+      </span>
+
+   </div>
+
+      </div>
+  
+
+   <div class="kurslarimiz">
+       <div class="kurslarimiz1">
+           kodlama yapıyoruz.
+           <p>
+            herkes hayatta istediği şekilde kodlama yapabilir.   
+           </p>
+       </div>
+       <div class="kurslarimiz1">
+yazılım için bir laptop yeterlidir.
+<p>
+    bu bilgisayar olmasa biz ne yapardık.
+
+</p>
+       </div>
+       <div class="kurslarimiz1"> güzel bir görsel
+           <p>
+             fotoğraf,telefon ve laptop  
+           </p>
+       </div>
+   </div>
+   <div id="hakkimizda">
+       <img src="img/letter-m-logo-alphabet-logotype-600w-242183434.jpg" alt="">
+        <p> Kaan Academy 
+            nice insanlar yetiştirmeye devam edecektir.
+        </p>
+   
+    </div>
+   
+</body>
+</html>

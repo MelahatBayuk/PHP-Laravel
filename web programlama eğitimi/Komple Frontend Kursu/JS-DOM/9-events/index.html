@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+   <!----- <div id="div1">
+        Kaan academy
+    </div>
+    <img src="img/images.jpg" alt=""> -->
+    <input class="inputcss" type="text" value="bir isim giriniz">
+    <script>
+      /*  var divimiz =document.getElementById("div1");
+        var resim=document.getElementsByTagName("img")[0]; */
+      var input=document.getElementsByClassName("inputcss")[0];
+      input.onkeyup=function(){ //girilen harfler otomatik büyüyo
+       input.value=input.value.toUpperCase();
+      };
+       /* resim.onload=function(){
+            alert("reim yüklendi");
+        }; */
+        //onload olayı gerçekleştirme, yükleme işlemi
+      /*  divimiz.onclick =function(){
+            divimiz.innerHTML="dive tıklandı";
+        };
+        resim.onclick=function(){
+            resim.src="img/aa.jpg";
+        }; */
+    </script>
+</body>
+
+</html>

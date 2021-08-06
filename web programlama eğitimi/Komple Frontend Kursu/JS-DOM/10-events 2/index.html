@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     /*   img {
+            height: 250px;
+        }
+        div{
+            border: 1px solid red;
+        } */
+    </style>
+</head>
+
+<body>
+   <!----- <div id="div1">
+        Kaan academy
+    </div> -->
+    <p  onclick="saatBasla()">Tarih</p>
+    <p></p>
+    <input  onfocus="focuslan()"   type="text" value="bir isim giriniz ">
+  
+  <script>
+      var divimiz =document.getElementById("div1");
+      var input=document.getElementsByClassName("inputcss")[0];
+       /* var divimiz=document.getElementById("div1");
+        divimiz.onmouseover=function(){
+            divimiz.innerHTML="mouse üzerine geldi";
+        }
+        divimiz.onmouseout=function(){
+            divimiz.innerHTML="kaan academy";
+        }
+        divimiz.onmousedown=function(){
+            divimiz.innerHTML="MOUSE'A BASILDI";
+        }
+        divimiz.onmouseup=function(){
+            divimiz.innerHTML="MOUSE'TAN EL KALDIRILDI";
+        } */
+       var tarihparagrafi=document.getElementsByTagName("p")[1] ; 
+      function saatBasla(){
+          setInterval(tarihgoster,1000);
+      }
+       function tarihgoster(){
+           var tarih=new date();
+           tarihparagrafi.innerHTML=tarih.getHours() + " :" +tarih.gateMinutes() + " :" +tarih.seconds();
+       }
+  </script>
+</body>
+
+</html>

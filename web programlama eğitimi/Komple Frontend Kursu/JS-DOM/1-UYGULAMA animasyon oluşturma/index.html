@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        #buyukkutu{
+            width: 200px;
+            height: 200px;
+            background: purple;
+            position: relative; /*normal akışın dışına çıkıyor ama pozisyonu biz ayarlayabiliyoruz*/
+
+        }
+        #kucukkutu{
+            width: 50px;
+            height: 50px;
+            background:pink;
+            position: absolute; /*normal akışın dışına çıktı */
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="buyukkutu">
+        <div id="kucukkutu">
+
+        </div>
+    </div>
+<script>
+      window.onload= function(){ //window.onload ile yüklemenin gecikmemesi için kullandık
+     var pozX=0,pozY=0;
+     var kucukkutu=document.getElementById("kucukkutu");
+     var zaman=setInterval(hareketet,10);
+    function hareketet(){
+         if(pozX>=150){
+             pozY++;
+             kucukkutu.style.top=pozY+ "px";
+             if(pozY>=150){
+                 clearInterval(zaman);
+             }
+         }
+         else{
+           pozX++;
+             kucukkutu.style.left=pozX + "px";
+         }
+     }
+
+      }
+
+</script>
+
+
+</body>
+</html>

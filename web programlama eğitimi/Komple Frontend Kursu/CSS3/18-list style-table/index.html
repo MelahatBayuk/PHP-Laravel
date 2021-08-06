@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: separate; /* içindeki kutuların şeklini belirlemek için kullanılıyor */
+            border-spacing: 20px 50px;
+            caption-side: bottom; /*tablonun başlıpının tarafını belirlemk için kullanılıyor */
+            empty-cells: hide; /* içi boş olan kutuları yok eder */
+            width: 100%;
+            border: 10px solid red;
+            table-layout: fixed;
+
+        }
+        table tr td {
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <table >
+        <caption>Renk Tablosu</caption>
+        <tr>
+            <td style="width: 30%;">Kırmızı</td>
+            <td style="width: 30%;">Yeşil</td>
+            <td style="width: 30%;">Mor</td>
+        </tr>
+        <tr>
+            <td>Mavi</td>
+            <td>Pembe</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
